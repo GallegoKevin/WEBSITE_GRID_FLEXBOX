@@ -64,7 +64,7 @@ nav{
     cursor: pointer;
 }
 .img-logo:hover{
-    animation: cambioColores2 5s infinite alternate; /* Animación */
+    animation: cambioColores2 5s infinite alternate; 
 }
 @keyframes cambioColores2 {
     0% { box-shadow: inset 0 0 10px #ff0c0c; }
@@ -158,8 +158,8 @@ button{
 
 .box-imags {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
-    grid-template-rows: repeat(2, auto); /* Dos filas con altura automática */
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, auto); 
     margin: 0 auto;
 }
 
@@ -173,7 +173,7 @@ button{
 }
 .img-01{
     border-radius: 100px 0px 0px 100px;
-    background-image: url(./img/images\ \(1\).jpg);
+    background-image: url(../img/images\ \(1\).jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-size: cover;
@@ -193,39 +193,38 @@ button{
 }
 
 .img-02 {
-    border-radius: 20px; /* Establece el radio de borde */
-    background-image: url(./img/images.jpg); /* Establece la imagen de fondo */
-    background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
-    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
-    border: 6px solid rgb(255, 136, 0); /* Establece el borde con color naranja */
-    filter: grayscale(100%); /* Convierte la imagen a blanco y negro inicialmente */
-    transition: filter 0.5s; /* Aplica una transición suave para el filtro */
+    border-radius: 20px; 
+    background-image: url(../img/images.jpg); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    border: 6px solid rgb(255, 136, 0); 
+    filter: grayscale(100%); 
+    transition: filter 0.5s; 
   }
   
   .img-02:hover {
-    filter: grayscale(0%) sepia(0%) hue-rotate(0deg); /* Cambia la imagen a color completo al pasar el cursor */
+    filter: grayscale(0%) sepia(0%) hue-rotate(0deg); 
   }
 .img-03{
     border-radius: 0px 20px 20px 20px;
-    background-image: url(./img/redes-lan-wan-servicio-centhosperu.jpg);
+    background-image: url(../img/redes-lan-wan-servicio-centhosperu.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-size: cover;
     border: 6px solid rgb(252, 255, 52);
-    transition: box-shadow 0.3s ease; /* Transición suave para la sombra de caja */
+    transition: box-shadow 0.3s ease; 
     cursor: pointer;
 }
 
-/* Estilos de la sombra de caja cuando el cursor está sobre el elemento */
 .img-03:hover {
-  box-shadow: 0 0 10px rgba(255, 255, 255), /* Sombra de caja blanca */
-              0 0 20px rgba(62, 218, 218),   /* Sombra de caja cyan */
-              0 0 30px rgba(28, 5, 128);   /* Sombra de caja cyan más grande */
+  box-shadow: 0 0 10px rgba(255, 255, 255), 
+              0 0 20px rgba(62, 218, 218),   
+              0 0 30px rgba(28, 5, 128);   
 }
 
 .img-04{
     border-radius: 100px 100px 100px 100px;
-    background-image: url(./img/sgmp78_1.webp);
+    background-image: url(../img/sgmp78_1.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-size: cover;
