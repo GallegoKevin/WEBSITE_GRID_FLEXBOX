@@ -1,0 +1,455 @@
+*,
+*::before,
+*::after{
+
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(229, 231, 231);
+}
+
+nav{
+  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    box-shadow: 0px 5px 10px rgb(14, 143, 160);
+    background: linear-gradient(to right, #070063, #382e5c, #00008a);
+}
+
+.box-logo{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.h2-01 {
+    font-size: 29px;
+    font-weight: bold;
+    background: linear-gradient(to right, #FF6A6A, #FFD56A, #6AFF6A, #6AAFFF, #6A6AFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: cambioColores 5s infinite alternate;
+    -webkit-text-stroke: 1px skyblue; 
+    
+}
+
+@keyframes cambioColores {
+    0% { text-shadow: 0 0 10px #FF6A6A; color: #FF6A6A; }
+    25% { text-shadow: 0 0 10px #FFD56A; color: #FFD56A; }
+    50% { text-shadow: 0 0 10px #6AFF6A; color: #6AFF6A; }
+    75% { text-shadow: 0 0 10px #6AAFFF; color: #6AAFFF; }
+    100% { text-shadow: 0 0 10px #6A6AFF; color: #6A6AFF; }
+}
+
+.img-logo{
+   
+    background-image: url(../img/image.png);
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+   /* Tamaño del fondo */
+    box-shadow: inset 0 0 10px #ffffff;
+    cursor: pointer;
+}
+.img-logo:hover{
+    animation: cambioColores2 5s infinite alternate; /* Animación */
+}
+@keyframes cambioColores2 {
+    0% { box-shadow: inset 0 0 10px #ff0c0c; }
+    25% { box-shadow: inset 0 0 10px rgb(228, 174, 39); }
+    50% { box-shadow: inset 0 0 10px rgb(255, 102, 0); }
+    75% { box-shadow: inset 0 0 10px rgba(0, 119, 255, 0.5); }
+    100% { box-shadow: inset 0 0 10px rgb(0, 225, 255); }
+}
+ul{
+
+    margin: 0;
+    padding: 0 ;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2px;
+
+}
+
+
+.access {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.me-01{
+    text-decoration: none;
+    font-size: 20px;
+    
+    color: rgb(255, 255, 255);
+    background-color: rgb(115, 163, 158);
+    padding: 10px;
+    border-radius: 10px;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    transition: background-color 0.2s ease-in;
+    
+}
+.me-01:hover{
+    background-color: rgb(0, 139, 199);
+    border-bottom: 3px solid rgb(0, 225, 255);
+    box-shadow: 0 0 8px 4px rgba(255, 255, 255, 0.8);
+}
+
+button{
+
+   
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer
+}
+
+.b-login{
+    color: white;
+    font-size: 19;
+    background-color: rgb(14, 121, 67);
+    border:2px solid white;
+    cursor: pointer;
+}
+
+.b-login:hover{
+   background: linear-gradient(to bottom right, #00FF00, #008000); 
+    color: white;
+    
+}
+.b-register{
+    color: white;
+    font-size: 19;
+    background-color: rgb(255, 0, 0);
+   
+    cursor: pointer;
+    border: 2px solid rgb(255, 255, 255);
+} 
+.b-register:hover{
+    background: linear-gradient(to bottom right, #FFA500, #FF0000);
+    color: white;
+}
+.box{
+   max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   margin: 0 auto;
+   background: linear-gradient(to bottom right, #bdfce5, #ffffff);
+}
+
+
+
+.box-imags {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+    grid-template-rows: repeat(2, auto); /* Dos filas con altura automática */
+    margin: 0 auto;
+}
+
+#imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 250px;
+    height: 190px;
+}
+.img-01{
+    border-radius: 100px 0px 0px 100px;
+    background-image: url(./img/images\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 6px solid rgb(255, 25, 25);
+    cursor: pointer;
+    
+}
+
+.img-01:hover{
+    animation: rotacion 0.9s infinite alternate-reverse;
+}
+@keyframes rotacion {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+
+    
+}
+
+.img-02 {
+    border-radius: 20px; /* Establece el radio de borde */
+    background-image: url(./img/images.jpg); /* Establece la imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+    border: 6px solid rgb(255, 136, 0); /* Establece el borde con color naranja */
+    filter: grayscale(100%); /* Convierte la imagen a blanco y negro inicialmente */
+    transition: filter 0.5s; /* Aplica una transición suave para el filtro */
+  }
+  
+  .img-02:hover {
+    filter: grayscale(0%) sepia(0%) hue-rotate(0deg); /* Cambia la imagen a color completo al pasar el cursor */
+  }
+.img-03{
+    border-radius: 0px 20px 20px 20px;
+    background-image: url(./img/redes-lan-wan-servicio-centhosperu.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 6px solid rgb(252, 255, 52);
+    transition: box-shadow 0.3s ease; /* Transición suave para la sombra de caja */
+    cursor: pointer;
+}
+
+/* Estilos de la sombra de caja cuando el cursor está sobre el elemento */
+.img-03:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255), /* Sombra de caja blanca */
+              0 0 20px rgba(62, 218, 218),   /* Sombra de caja cyan */
+              0 0 30px rgba(28, 5, 128);   /* Sombra de caja cyan más grande */
+}
+
+.img-04{
+    border-radius: 100px 100px 100px 100px;
+    background-image: url(./img/sgmp78_1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 6px solid rgb(197, 255, 88);
+    
+}
+
+.img-04:hover{
+    animation: girar 0.5s linear infinite;
+}
+@keyframes girar {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+.box-content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 500px;
+    gap: 5px;
+    margin: 0 auto;
+}
+
+.text-01{
+    font-size: 40px;
+    text-align: center;
+    background: linear-gradient(to right, #474aff, #ff0000); /* Degradado de color */
+    -webkit-background-clip: text; /* Aplicar el degradado solo al texto (para navegadores Webkit) */
+    background-clip: text; /* Aplicar el degradado solo al texto */
+    color: transparent; /* Hacer el texto transparente */
+}
+.text-02{
+    font-size: 20px;
+    text-align: center;
+    background: linear-gradient(to right, #000000b2, #000000); /* Degradado de color */
+    -webkit-background-clip: text; /* Aplicar el degradado solo al texto (para navegadores Webkit) */
+    background-clip: text; /* Aplicar el degradado solo al texto */
+    color: transparent;
+}
+
+/*---------------------*/
+section{
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    justify-content: center;
+    justify-items: center;
+    grid-gap: 40px;
+    
+    margin: 0 auto;
+    width:1200px;
+    padding: 20px;
+    
+    
+}
+
+.card {
+    position: relative;
+    width: 90%;
+    height: 300px;
+    border-radius: 30px;
+    overflow: hidden;
+    border: 3px solid white;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+.image {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.text_container {
+    position: absolute;
+    top: 60%;
+    left: -5px;
+    height: 65%;
+    width: 108%;
+    background-image: linear-gradient(0deg, #3f5efb, #fc466b);
+    border-radius: 30px;
+    transform: skew(19deg, -9deg);
+}
+
+.text_container:hover {
+    background-image: linear-gradient(0deg, #fc466b, #3f5efb);
+}
+
+.second .text_container {
+    background-image: linear-gradient(-20deg, #bb7413, #e7d25c);
+}
+
+.second .text_container:hover {
+    background-image: linear-gradient(-20deg, #e7d25c, #bb7413);
+}
+
+.logo {
+    height: 80px;
+    width: 80px;
+    border-radius: 20px;
+    background-color: #fff;
+    position: absolute;
+    left: 30px;
+    bottom: 30%;
+    overflow: hidden;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+}
+
+
+
+.main_text {
+    position: absolute;
+    color: #fff;
+    font-weight: 900;
+    left: 150px;
+    bottom: 18%;
+}
+
+.card_btn {
+    position: absolute;
+    color: #fff;
+    right: 30px;
+    bottom: 4%;
+    padding: 10px 20px;
+}
+
+
+button{
+    color: white;
+    font-weight: bolder;
+    background: linear-gradient(135deg, #007bff, #00bfff);
+    font-size: 16px;
+}
+
+button:hover{
+    background: linear-gradient(135deg, #0c2466, #1adae7);
+}
+
+.gn-01{
+    background: linear-gradient(to bottom right, #87CEEB, #ADD8E6); 
+    
+}
+.d-02{
+    background: linear-gradient(to right, #081bc4, #5497ee); /* Degradado de fondo */
+    -webkit-background-clip: text; /* Para navegadores basados en WebKit */
+    background-clip: text; /* Aplica el degradado al texto */
+    color: transparent; /* Hace que el texto sea transparente */
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+/**/
+.f-01{
+    
+    max-width: 100%;
+    height: 130px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(to right, #070063, #382e5c, #00008a);
+    
+ }
+ .fd-01{
+    font-weight: bolder;
+    color: white;
+    margin: 0 auto;
+   
+
+ }
+ .copyright{
+    
+    padding: 10px;
+ }
+
+
+ .red_social{
+    
+    width: 240px;
+    margin: 0 auto;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+   
+ }
+
+ .fi-01{
+    width: 44px;
+    height: 44px;
+    text-decoration: none;
+    animation: giroInfinito 2s linear infinite;
+    margin:0;
+    
+}
+
+
+.fi-02{
+    width: 35px;
+    height: 35px;
+    animation: giroInfinito 2s linear infinite;
+    margin:0px;
+    text-decoration: none;
+    
+}
+
+.fi-03{
+    width: 80%;
+    height: 80%;
+    margin-bottom: -5px;
+    animation: giroInfinito 2s linear infinite;
+    text-decoration: none;
+    margin: 0;
+    
+}
+
+@keyframes giroInfinito {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg); 
+    }
+  }

@@ -1,0 +1,398 @@
+*,
+*::before,
+*::after{
+
+    box-sizing: border-box;
+    text-align: center;
+}
+
+main{
+
+    max-width: 100%;
+    border: 1px solid white;
+
+    margin: 0 auto;
+    padding: 0;
+    background: linear-gradient(to bottom, #000000, #ffffff);
+      
+}
+
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(229, 231, 231);
+    
+}
+
+nav{
+  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    background: linear-gradient(to right, #070063, #382e5c, #00008a);
+}
+
+.box-logo{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.h2-01 {
+    font-size: 29px;
+    font-weight: bold;
+    background: linear-gradient(to right, #FF6A6A, #FFD56A, #6AFF6A, #6AAFFF, #6A6AFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: cambioColores 5s infinite alternate;
+    -webkit-text-stroke: 1px skyblue; 
+    
+}
+
+@keyframes cambioColores {
+    0% { text-shadow: 0 0 10px #FF6A6A; color: #FF6A6A; }
+    25% { text-shadow: 0 0 10px #FFD56A; color: #FFD56A; }
+    50% { text-shadow: 0 0 10px #6AFF6A; color: #6AFF6A; }
+    75% { text-shadow: 0 0 10px #6AAFFF; color: #6AAFFF; }
+    100% { text-shadow: 0 0 10px #6A6AFF; color: #6A6AFF; }
+}
+
+.img-logo{
+   
+    background-image: url(../img/image.png);
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+   /* Tamaño del fondo */
+    box-shadow: inset 0 0 10px #ffffff;
+    cursor: pointer;
+}
+.img-logo:hover{
+    animation: cambioColores2 5s infinite alternate; /* Animación */
+}
+@keyframes cambioColores2 {
+    0% { box-shadow: inset 0 0 10px #ff0c0c; }
+    25% { box-shadow: inset 0 0 10px rgb(228, 174, 39); }
+    50% { box-shadow: inset 0 0 10px rgb(255, 102, 0); }
+    75% { box-shadow: inset 0 0 10px rgba(0, 119, 255, 0.5); }
+    100% { box-shadow: inset 0 0 10px rgb(0, 225, 255); }
+}
+ul{
+
+    margin: 0;
+    padding: 0 ;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2px;
+
+}
+
+
+.access {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.me-01{
+    text-decoration: none;
+    font-size: 20px;
+    
+    color: rgb(255, 255, 255);
+    background-color: rgb(115, 163, 158);
+    padding: 10px;
+    border-radius: 10px;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    transition: background-color 0.2s ease-in;
+    
+}
+.me-01:hover{
+    background-color: rgb(0, 139, 199);
+    border-bottom: 3px solid rgb(0, 225, 255);
+    box-shadow: 0 0 8px 4px rgba(255, 255, 255, 0.8);
+}
+
+button{
+
+   
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer
+}
+
+.b-login{
+    color: white;
+    font-size: 19;
+    background-color: rgb(14, 121, 67);
+    border:2px solid white;
+    cursor: pointer;
+}
+
+.b-login:hover{
+   background: linear-gradient(to bottom right, #00FF00, #008000); 
+    color: white;
+    
+}
+.b-register{
+    color: white;
+    font-size: 19;
+    background-color: rgb(255, 0, 0);
+   
+    cursor: pointer;
+    border: 2px solid rgb(255, 255, 255);
+} 
+.b-register:hover{
+    background: linear-gradient(to bottom right, #FFA500, #FF0000);
+    color: white;
+}
+
+/*carrusel*/
+
+.contenedor {
+    width: 80%;
+    height: 500px;
+    overflow: hidden;
+  
+    
+    margin: 10px auto;
+    margin-top: 20px;
+   
+
+  }
+
+  img{
+    width: 80%;
+    height: 500px;
+  }
+
+
+  
+  .carrusel {
+    display: flex;
+    animation: desplazamiento 10s linear infinite; /* Ajusta la duración según tus necesidades */
+  }
+  
+  .slide {
+    flex: 0 0 auto;
+    width: 100%; /* Ajusta el ancho de cada slide */
+  }
+  
+  @keyframes desplazamiento {
+    0% {
+      transform: translateX(0); /* Mantiene el primer slide visible al inicio */
+    }
+    25% {
+      transform: translateX(-100%); /* Desplaza el primer slide hacia la izquierda */
+    }
+    50% {
+      transform: translateX(-100%); /* Mantiene el segundo slide visible */
+    }
+    75% {
+      transform: translateX(-200%); /* Desplaza el segundo slide hacia la izquierda */
+    }
+    100% {
+      transform: translateX(-200%); /* Mantiene el primer slide visible al final */
+    }
+  }
+
+  img{
+    width: 100%;
+  }
+
+  /*Licencias*/
+
+  .cont-04{
+    background: linear-gradient(to bottom, #a3c7ee, #ba8be6);
+    
+  }
+  .ctr-02{
+   
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0 auto;
+    justify-content: center;
+    padding: 20px;
+    grid-gap: 20px;
+   
+  }
+
+  .par-01{
+    border: 2px solid rgb(211, 238, 230);
+    background: linear-gradient(to bottom, #000000, #f14545);
+    height: 320px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    
+  }
+  
+
+  figure {
+    width: 140px;
+    height: 140px;
+    background-size: cover;
+    background-position: center;
+    margin: 10px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border: 4px solid rgb(255, 94, 0);
+    border-radius: 10px;
+  }
+  
+  .img-01 {
+    background-image: url("https://softwareperu1.com/cdn/shop/products/Windows.jpg?v=1670954876");
+  }
+  
+  .img-02 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKAkQtjBl_hJdSANhGtDEX2bl_hp48pmzWf0A_dfRMSA&s");
+  }
+  .img-03 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL2eeTNqWUr-fswPG5mXg2dj262ec3oaxqLW1s-Vu16g&s");
+  }
+  .img-04 {
+    background-image: url("https://tienda.replica.com.pe/wp-content/uploads/2023/03/B11010059-Licencia-Bitdefender-Antivirus-PlusBitDefender-3-PCs-12-Meses.jpg");
+  }
+  .img-05 {
+    background-image: url("https://coolboxpe.vtexassets.com/arquivos/ids/293696-800-auto?v=638267630876100000&width=800&height=auto&aspect=true");
+  }
+  .img-06 {
+    background-image: url("https://www.compucentro.pe/wp-content/uploads/2022/08/licencia-eset-nod32-antivirus-2022-01-pc-600x600.png");
+  }
+
+ h2{
+    font-size: 40px;
+    
+    text-align: center;
+   
+    padding: 10px;
+    background: linear-gradient(to right, #474aff, #ff0000); /* Degradado de color */
+
+    color: rgb(247, 241, 241); /* Hacer el texto transparente */
+ }
+ .detalle{
+    
+    text-align: start;
+    line-height: 1.2em;
+    width: auto;
+    padding: 0PX;
+    margin: 0 auto;
+    display: block;
+    font-size: 16px;
+    font-weight: bolder;
+    
+    background-image: linear-gradient(to right, #003e80, #1f617a); 
+    -webkit-background-clip: text; 
+    color: transparent; 
+ }
+
+ .int{
+    background-image: linear-gradient(to bottom right, #4682B4, #b0c4de, #708090, #2F4F4F); /* Degradado de azul acero a negro platino pasando por azul platino y gris */
+
+    height: 158px;
+    padding: 16px;
+    border-radius: 0 0 10px 10px;
+    border: 1px solid white;
+    
+ 
+ }
+
+ .ref01{
+    margin: 30px;
+    background: linear-gradient(to bottom, #ff8c00, #ff0000);
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    border-bottom: 3px solid white;
+ }
+ .ref01:hover{
+    background: linear-gradient(to bottom, #26cf67, #0e5c3e);
+ }
+
+ /*footer*/
+
+ .f-01{
+    
+    max-width: 100%;
+    height: 130px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(to right, #070063, #382e5c, #00008a);
+    
+ }
+ .fd-01{
+    font-weight: bolder;
+    color: white;
+    margin: 0 auto;
+   
+
+ }
+ .copyright{
+    
+    padding: 10px;
+ }
+
+
+ .red_social{
+    
+    width: 240px;
+    margin: 0 auto;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+   
+ }
+
+ .fi-01{
+    width: 44px;
+    height: 44px;
+    text-decoration: none;
+    animation: giroInfinito 2s linear infinite;
+    margin:0;
+    
+}
+
+
+.fi-02{
+    width: 35px;
+    height: 35px;
+    animation: giroInfinito 2s linear infinite;
+    margin:0px;
+    text-decoration: none;
+    
+}
+
+.fi-03{
+    width: 80%;
+    height: 80%;
+    margin-bottom: -5px;
+    animation: giroInfinito 2s linear infinite;
+    text-decoration: none;
+    margin: 0;
+    
+}
+
+@keyframes giroInfinito {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg); 
+    }
+  }
